@@ -7,8 +7,8 @@ const PlayersList = (props) =>{
     return(
 
        <div>
-           <h1>Players</h1>
-           <div>
+           <h1>Players List</h1>           
+           <div className ="playersList">
                {props.players.map(player =>(
                 <Player className ="player"
                 key = {player.id}

@@ -1,24 +1,30 @@
 import React from 'react';
 import axios from 'axios';
 import PlayersList from './components/PlayersList'
+import useDarkMode from './Hooks/use'
 import './App.css';
 
 class App extends React.Component{
 constructor(props){
   super(props)
   this.state ={
-    player: []
+    player: [],
+    darkMode: initialValue
   }
+}
+
+
+toggleMode = () => {
+
+this.setState({
+darkMode:(!darkMode)
+})
+
 }
 
 componentDidMount(){ 
   this.getPlayers()  
 }
-
-// componentDidUpdate(prevProps,prevState){
-//   if (prevState.player !== this.state.player)
-//   // this.getPlayers()
-// }
 
 getPlayers =()=>{
   axios
@@ -40,7 +46,12 @@ render(){
 
     return(
       <div>
-        <h2>Players List</h2>
+        <div>
+        <div
+          onClick={toggleMode}
+          
+        />
+      </div>
         <PlayersList players={this.state.player}/>        
       </div>
     )

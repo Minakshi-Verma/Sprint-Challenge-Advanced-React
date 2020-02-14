@@ -6,10 +6,10 @@ const Player =(props) =>{
 
     return(
 
-        <div>
-           <h2>name: {props.player.name}</h2>
-           <h3>country: {props.player.country}</h3>
-           <h3>searches:{props.player.searches}</h3>
+        <div className = "player">
+           <h2>Name: {props.player.name}</h2>
+           <h3>Country: {props.player.country}</h3>
+           <h3>Searches:{props.player.searches}</h3>
 
         </div>
     )

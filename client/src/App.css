@@ -31,3 +31,52 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  text-align: center;
+}
+.playersList{
+  display: flex;
+  justify-content:space-between;  
+  flex-wrap: wrap;
+
+}
+
+.player{
+  margin:2%;
+  border:1px black solid;
+  width:25%;
+  min-height: 31vh;
+  border-radius: 10px;
+  background: #e6e6e6;
+  text-align: center;
+
+}
+
+/* .dark-mode__toggle {
+  background: palegoldenrod;
+  border-radius: 30px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+} */
+
+.toggle {
+  background: blue;
+  border-radius: 30px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.dark-mode{
+  background: #47476b;
+  color:red;
+}
