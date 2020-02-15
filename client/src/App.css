@@ -62,7 +62,7 @@ h1{
   width: 40px;
 } */
 
-.toggle {
+/* .toggle {
   background: blue;
   border-radius: 30px;
   height: 18px;
@@ -79,4 +79,31 @@ h1{
 .dark-mode{
   background: #47476b;
   color:red;
+} */
+.dark-mode__toggle {
+  background: rgba(92, 92, 92, 0.253);
+  border-radius: 50px;
+  border: 3px solid black;
+  height: 40px;
+  position: relative;
+  width: 80px;
+  margin: 1% auto;
+}
+.toggle {
+  background: rgba(55, 196, 231, 0.719);
+  border-radius: 50px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 40px;
+}
+
+.toggled {
+  left: 38px;
+  background: rgba(231, 55, 193, 0.815);
+}
+
+.dark-mode{
+  background: blue;
 }
