@@ -31,3 +31,79 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  text-align: center;
+}
+.playersList{
+  display: flex;
+  justify-content:space-between;  
+  flex-wrap: wrap;
+
+}
+
+.player{
+  margin:2%;
+  border:1px black solid;
+  width:25%;
+  min-height: 31vh;
+  border-radius: 10px;
+  background: #e6e6e6;
+  text-align: center;
+
+}
+
+/* .dark-mode__toggle {
+  background: palegoldenrod;
+  border-radius: 30px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+} */
+
+/* .toggle {
+  background: blue;
+  border-radius: 30px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.dark-mode{
+  background: #47476b;
+  color:red;
+} */
+.dark-mode__toggle {
+  background: rgba(92, 92, 92, 0.253);
+  border-radius: 50px;
+  border: 3px solid black;
+  height: 40px;
+  position: relative;
+  width: 80px;
+  margin: 1% auto;
+}
+.toggle {
+  background: rgba(55, 196, 231, 0.719);
+  border-radius: 50px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 40px;
+}
+
+.toggled {
+  left: 38px;
+  background: rgba(231, 55, 193, 0.815);
+}
+
+.dark-mode{
+  background: blue;
+}
